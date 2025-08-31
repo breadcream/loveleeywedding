@@ -7,7 +7,8 @@ const Main = () => {
   return (
     <div>
       <MainImg src={mainImg} />
-      <MainTitle>{greeting.title}</MainTitle>
+      {/* <MainTitle>{greeting.title}</MainTitle> */}
+      <Invitation>{greeting.eventMainDetail}</Invitation>
       <SubTitle>{greeting.eventDetail}</SubTitle>
     </div>
   );
@@ -16,17 +17,22 @@ const Main = () => {
 export default Main;
 
 const MainImg = styled.img`
-  border-radius: 200px 200px 0 0;
-  width: 90%;
   max-width: 450px;
-  padding-top: 20px;
+  margin-top: -60px;
 `;
 
-const MainTitle = styled.p`
-  font-family: HSSanTokki20-Regular, serif;
-  font-size: 2rem;
+// const MainTitle = styled.p`
+//   font-family: HSSanTokki20-Regular, serif;
+//   font-size: 2rem;
+//   color: #2F2120;
+//   line-height: 120%;
+//   white-space: pre-line;
+// `;
+
+const Invitation = styled.p`
+  font-size: 1.1rem;
   color: #2F2120;
-  line-height: 120%;
+  line-height: 140%;
   white-space: pre-line;
 `;
 
