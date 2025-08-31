@@ -19,6 +19,15 @@ body {
   background-color: #ffffff;
 }
 
+html {
+  -ms-overflow-style:none; /* IE and Edge */
+    scrollbar-width:none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+	display:none /* Chrome , Safari , Opera */
+}
+
 html, body {
   height: 100%;
 }
