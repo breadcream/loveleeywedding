@@ -17,7 +17,10 @@ const Main = () => {
 export default Main;
 
 const MainImg = styled.img`
-  max-width: 450px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
   margin-top: -60px;
 `;
 
