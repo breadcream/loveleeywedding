@@ -32,6 +32,8 @@ html::-webkit-scrollbar {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
 }
 
 @font-face {
