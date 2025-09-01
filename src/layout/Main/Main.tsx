@@ -1,9 +1,28 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import mainImg from '@/assets/images/05.jpg'
+import { useEffect } from 'react';
 
 const Main = () => {
   const { greeting } = data;
+
+  // 🔒 뒤로가기 방지
+  useEffect(() => {
+    // 현재 URL로 더미 state 추가
+    window.history.pushState(null, '', window.location.href);
+
+    const handlePopState = () => {
+      // 사용자가 뒤로가기 했을 때 다시 현재 페이지로 고정
+      window.history.pushState(null, '', window.location.href);
+      alert('초대장을 벗어날 수 없습니다 🙏');
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
   return (
     <div>
       <MainImg src={mainImg} />
