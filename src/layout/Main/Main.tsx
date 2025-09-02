@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import mainImg from '@/assets/images/05.jpg'
-import subImg from '@/assets/images/05_01.jpg'
 import { useEffect } from 'react';
 
 const Main = () => {
