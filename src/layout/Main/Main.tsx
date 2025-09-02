@@ -40,7 +40,7 @@ const MainImg = styled.img`
   height: auto;
   display: flex;
   align-items: center;
-  margin-top: -60px;
+  margin-top: -30px;
 `;
 
 // const MainTitle = styled.p`
