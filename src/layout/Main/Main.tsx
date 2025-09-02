@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import mainImg from '@/assets/images/05.jpg'
+import subImg from '@/assets/images/05_01.jpg'
 import { useEffect } from 'react';
 
 const Main = () => {
@@ -14,7 +15,6 @@ const Main = () => {
     const handlePopState = () => {
       // 사용자가 뒤로가기 했을 때 다시 현재 페이지로 고정
       window.history.pushState(null, '', window.location.href);
-      alert('초대장을 벗어날 수 없습니다 🙏');
     };
 
     window.addEventListener('popstate', handlePopState);
@@ -26,6 +26,7 @@ const Main = () => {
   return (
     <div>
       <MainImg src={mainImg} />
+      {/* <MainImg src={subImg} /> */}
       {/* <MainTitle>{greeting.title}</MainTitle> */}
       <Invitation>{greeting.eventMainDetail}</Invitation>
       <SubTitle>{greeting.eventDetail}</SubTitle>
