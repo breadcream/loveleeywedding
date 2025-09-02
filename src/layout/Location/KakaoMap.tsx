@@ -5,7 +5,7 @@ const KakaoMap = () => {
   const { lat, lon } = data.mapInfo;
   
   const [error] = useKakaoLoader({
-    appkey: '6fb9ec737fa5bf38d3540fbaf572a9d8',
+    appkey: import.meta.env.VITE_APP_KAKAOMAP_JAVASCRIPT_KEY,
     libraries: ['services', 'clusterer']
   });
 

@@ -37,7 +37,7 @@
   },
   "hostInfo": [
     {
-      "host": "신랑측",
+      "host": "신랑측에게",
       "accountInfo": [
         {
           "name": "이재준",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "host": "신부측",
+      "host": "신부측에게",
       "accountInfo": [
         {
           "name": "박은영",
@@ -90,36 +90,30 @@
   "mapInfo": {
     "address1": "여의도 더파티움 파티움홀",
     "address2": "서울 영등포구 은행로 30\n여의도 더파티움 2층\n0507-1346-0181",
-    "naverMap": "https://naver.me/IM4RDses",
-    "kakaoMap": "https://kko.kakao.com/otznTfkVWV",
-    "lat": 37.54222,
-    "lon": 126.952708
+    "naverMap": "https://naver.me/GaldtBAQ",
+    "kakaoMap": "https://place.map.kakao.com/1485166493",
+    "lat": 37.5280281,
+    "lon": 126.9226506
   },
   "locationInfo": [
     {
       "title": "\uD83D\uDCCD 지하철",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 5·6호선 공덕역 7번 출구 (도보 2분)\n\uD83D\uDC49\uD83C\uDFFB 경의·중앙선, 공항철도 공덕역 10번 출구 (도보 30초)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 9호선 국회의사당역 3번 출구\n(도보 5분)"
+    },
+    {
+      "title": "\uD83D\uDCCD 셔틀",
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 5호선 여의나루역 1번 출구\n(예식 1시간 전부터 셔틀버스 수시운행)"
     },
     {
       "title": "\uD83D\uDCCD 주차안내",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 건물 내 3-5층 2시간 무료주차\n(안내데스크에서 주차권 수령)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 건물 내 1시간 30분 무료주차\n(지하1층 안내데스크에서 주차권 수령)\n\n본관 만차 시 건너편 기계회관 건물 주차"
     }
   ],
   "emojis": [
-    "❤️",
-    "💛",
-    "💌",
-    "🥹",
-    "🥳",
     "👰🏻‍",
     "🤵🏻‍️",
     "🤍",
     "✨",
-    "💍",
-    "💒",
-    "💕",
-    "😍",
-    "🔔",
-    "💘"
+    "💍"
   ]
 }
