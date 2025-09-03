@@ -12,7 +12,7 @@ const Address = () => {
         return (
           <Way key={title}>
             <PointTitle>{title}</PointTitle>
-            <Caption>{desc}</Caption>
+            <Caption textAlign={'center'}>{desc}</Caption>
           </Way>
         );
       })}
@@ -23,15 +23,9 @@ const Address = () => {
 export default Address;
 
 const WayWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px 0px;
-  gap: 20px;
+  text-align: center;
 `;
 
 const Way = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  text-align: center;
 `;

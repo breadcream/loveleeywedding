@@ -21,4 +21,7 @@ const InvitationWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 15px;
+  --MARGIN: calc(var(--CARD-W) * 0.07);
 `;

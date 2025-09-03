@@ -27,7 +27,6 @@ const Main = () => {
       <MainImg src={mainImg} />
       {/* <MainImg src={subImg} /> */}
       {/* <MainTitle>{greeting.title}</MainTitle> */}
-      <Invitation>{greeting.eventMainDetail}</Invitation>
       <SubTitle>{greeting.eventDetail}</SubTitle>
     </div>
   );
@@ -41,21 +40,6 @@ const MainImg = styled.img`
   display: flex;
   align-items: center;
   margin-top: -30px;
-`;
-
-// const MainTitle = styled.p`
-//   font-family: HSSanTokki20-Regular, serif;
-//   font-size: 2rem;
-//   color: #2F2120;
-//   line-height: 120%;
-//   white-space: pre-line;
-// `;
-
-const Invitation = styled.p`
-  font-size: 1.1rem;
-  color: #2F2120;
-  line-height: 140%;
-  white-space: pre-line;
 `;
 
 const SubTitle = styled.p`
