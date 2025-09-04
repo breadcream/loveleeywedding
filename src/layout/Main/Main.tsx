@@ -25,8 +25,6 @@ const Main = () => {
   return (
     <div>
       <MainImg src={mainImg} />
-      {/* <MainImg src={subImg} /> */}
-      {/* <MainTitle>{greeting.title}</MainTitle> */}
       <SubTitle>{greeting.eventDetail}</SubTitle>
     </div>
   );
@@ -43,8 +41,12 @@ const MainImg = styled.img`
 `;
 
 const SubTitle = styled.p`
-  font-size: 1.1rem;
+  font-family: "Meddon", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1rem;
   color: #2F2120;
   line-height: 140%;
   white-space: pre-line;
+  margin-top: -60px;
 `;

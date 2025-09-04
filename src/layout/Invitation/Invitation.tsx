@@ -9,7 +9,7 @@ const Invitation = () => {
     <InvitationWrapper>
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
-      <Caption textAlign={'center'}>{greeting.eventDetail}</Caption>
+      <Caption textAlign={'center'}>{greeting.eventDetail2}</Caption>
     </InvitationWrapper>
   );
 };

@@ -6,12 +6,14 @@ import Account from '@/layout/Account/Account.tsx';
 import Container from '@/layout/Container.tsx';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
+import GalleryHeart from '@/layout/GalleryHeart/GalleryWrap.tsx';
 import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import KakaoMap from '@/layout/Location/KakaoMap.tsx';
 import MapButtons from '@/layout/Location/MapButtons.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
+import Sub from '@/layout/Sub/Sub.tsx';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,6 +47,10 @@ function App() {
       <Wrapper>
         <Heading1>Invitation</Heading1>
         <Invitation />
+        <Sub />
+      </Wrapper>
+      <Wrapper ref={galleryRef}>
+        <GalleryHeart />
       </Wrapper>
       <Wrapper ref={galleryRef}>
         <Heading1>Gallery</Heading1>
