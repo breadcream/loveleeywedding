@@ -16,6 +16,6 @@ const SubImg = styled.img`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  margin-top: 230px;
+  margin-top: 100px;
   margin-bottom: 200px;
 `;

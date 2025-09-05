@@ -7,7 +7,7 @@ const PhotoGallery = () => {
     cursor: 'pointer',
     objectFit: 'cover', // 전체 이미지가 보이도록 맞추고 싶을 때는 contain / 비율 유지하고 싶을 때는 cover
     width: '100px',
-    height: '150px',
+    height: '150px'
   };
 
   return (

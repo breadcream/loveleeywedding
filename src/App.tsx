@@ -14,6 +14,7 @@ import MapButtons from '@/layout/Location/MapButtons.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
 import Sub from '@/layout/Sub/Sub.tsx';
+import Diary from '@/layout/Diary/Diary.tsx';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -48,6 +49,8 @@ function App() {
         <Heading1>Invitation</Heading1>
         <Invitation />
         <Sub />
+        <Heading1>Our Growth Story</Heading1>
+        <Diary />
       </Wrapper>
       <Wrapper ref={galleryRef}>
         <GalleryHeart />

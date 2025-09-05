@@ -42,3 +42,15 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* 다음 버튼 */
+.swiper-button-next {
+  color: white;        /* 아이콘 색상 */
+  transform: scale(0.3); /* 크기 키우기 */
+}
+
+/* 이전 버튼 */
+.swiper-button-prev {
+  color: white;
+  transform: scale(0.3); /* 크기 키우기 */
+}

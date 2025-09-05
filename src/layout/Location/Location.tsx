@@ -17,7 +17,7 @@ const Location = () => {
 export default Location;
 
 const LocationWrapper = styled.div`
-  width: 130%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

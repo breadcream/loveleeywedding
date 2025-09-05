@@ -4,25 +4,37 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-
+import images from "./Images.ts";
 import './styles.css';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
 
 export default function PhotoGallery() {
+    const smallItemStyles: React.CSSProperties = {
+    cursor: 'pointer',
+    objectFit: 'cover', // 전체 이미지가 보이도록 맞추고 싶을 때는 contain / 비율 유지하고 싶을 때는 cover
+    width: '170px',
+    height: '200px'
+  };
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper" slidesPerView={2}>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+        slidesPerView={2}
+        slidesPerGroup={2}
+        spaceBetween={45}
+        loop={true}
+        style={{
+          marginTop: '-275px'
+        }}>
+        {images.map((src, index) => (
+        <SwiperSlide key={index}>
+          <img src={src} alt={`slide-${index}`} style={smallItemStyles}/>
+        </SwiperSlide>
+      ))}
       </Swiper>
     </>
   );
