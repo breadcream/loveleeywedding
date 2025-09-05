@@ -70,3 +70,10 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.container {
+  width: 360px;           /* 본문 폭 고정 */
+  min-height: 100vh;       /* 화면 세로 전체 높이 확보 */
+  background-color: #ffffff; /* 카드 느낌 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 원하면 그림자 */
+}

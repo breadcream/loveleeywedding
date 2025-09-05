@@ -33,7 +33,7 @@ const Main = () => {
 export default Main;
 
 const MainImg = styled.img`
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -48,5 +48,4 @@ const SubTitle = styled.p`
   color: #2F2120;
   line-height: 140%;
   white-space: pre-line;
-  margin-top: -60px;
 `;

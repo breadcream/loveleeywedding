@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <Container>
+    <Container className="container">
       <Wrapper>
         <Main />
       </Wrapper>
@@ -49,10 +49,17 @@ function App() {
         <Heading1>Invitation</Heading1>
         <Invitation />
         <Sub />
+      </Wrapper>
+      <Wrapper
+      style={{
+          width: '100%',
+          backgroundImage: "url('src/assets/images/bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}>
         <Heading1>Our Growth Story</Heading1>
         <Diary />
-      </Wrapper>
-      <Wrapper ref={galleryRef}>
         <GalleryHeart />
       </Wrapper>
       <Wrapper ref={galleryRef}>

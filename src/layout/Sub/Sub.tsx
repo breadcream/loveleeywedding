@@ -11,7 +11,7 @@ const Sub = () => {
 export default Sub;
 
 const SubImg = styled.img`
-  width: 60vw;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   display: flex;

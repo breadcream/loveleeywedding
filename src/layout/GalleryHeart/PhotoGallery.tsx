@@ -14,8 +14,8 @@ export default function PhotoGallery() {
     const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer',
     objectFit: 'cover', // 전체 이미지가 보이도록 맞추고 싶을 때는 contain / 비율 유지하고 싶을 때는 cover
-    width: '170px',
-    height: '200px'
+    width: '100%',
+    height: '100%'
   };
   return (
     <>
@@ -28,7 +28,7 @@ export default function PhotoGallery() {
         spaceBetween={45}
         loop={true}
         style={{
-          marginTop: '-275px'
+          marginTop: '-70%'
         }}>
         {images.map((src, index) => (
         <SwiperSlide key={index}>
