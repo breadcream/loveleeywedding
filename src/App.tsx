@@ -16,7 +16,7 @@ import Main from '@/layout/Main/Main.tsx';
 import Sub from '@/layout/Sub/Sub.tsx';
 import Diary from '@/layout/Diary/Diary.tsx';
 import styled from '@emotion/styled';
-
+import AnimatedComponent from './components/AnimatedComponent.tsx';
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef(null);
@@ -58,51 +58,66 @@ const FullWidthSection = styled.div<{ bg?: string }>`
 `;
 
   return (
-        <AppContainer>
-      <FullWidthSection>
-        <Wrapper>
-          <Main />
-        </Wrapper>
+      <AppContainer>
+        <AnimatedComponent>
+          <FullWidthSection>
+            <Wrapper>
+              <Main />
+            </Wrapper>
           </FullWidthSection>
-
-        <Wrapper>
-          <Heading1>Invitation</Heading1>
-          <Invitation />
-          <Sub />
-        </Wrapper>
-        <WrapperPull>
-          <Heading1           
-            style={{
-              marginBottom: '10%'
-            }}>Our Growth Story</Heading1>
-          <Diary>
-            <GalleryHeart />
-          </Diary>
-          <Heading1           
-            style={{
-              marginBottom: '10%'
-            }}>Slide me</Heading1>
-        </WrapperPull>
-        <Wrapper ref={galleryRef}>
-          <Heading1>Gallery</Heading1>
-          <GalleryWrap />
-        </Wrapper>
-        <Wrapper>
-          <Heading2>마음 전하실 곳</Heading2>
-          <Account />
-        </Wrapper>
-        <Wrapper>
-          <Heading1>Location</Heading1>
-          <KakaoMap />
-          <MapButtons />
-        </Wrapper>
-        <Wrapper>
-          <Location />
-        </Wrapper>
-        <Wrapper>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Wrapper>
+            <Heading1>Invitation</Heading1>
+            <Invitation />
+            <Sub />
+          </Wrapper>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <WrapperPull>
+            <Heading1           
+              style={{
+                marginBottom: '10%'
+              }}>Our Growth Story</Heading1>
+            <Diary>
+              <GalleryHeart />
+            </Diary>
+            <Heading1           
+              style={{
+                marginBottom: '10%'
+              }}>Slide me</Heading1>
+          </WrapperPull>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Wrapper ref={galleryRef}>
+            <Heading1>Gallery</Heading1>
+            <GalleryWrap />
+          </Wrapper>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Wrapper>
+            <Heading2>마음 전하실 곳</Heading2>
+            <Account />
+          </Wrapper>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Wrapper>
+            <Heading1>Location</Heading1>
+            <KakaoMap />
+            <MapButtons />
+          </Wrapper>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Wrapper>
+            <Location />
+          </Wrapper>
+        </AnimatedComponent>
+        <AnimatedComponent>
+          <Wrapper>
           <Heading1>Message</Heading1>
           <Guestbook />
         </Wrapper>
+        </AnimatedComponent>
         <FloatingBar isVisible={isVisible} />
     </AppContainer>
   );
