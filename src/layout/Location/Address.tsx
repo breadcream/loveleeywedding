@@ -36,8 +36,7 @@ const Way = styled.div`
     border-bottom: 1px solid #dfdfdf;
     margin: 0 auto;         /* 가운데 정렬 */
   }
-  &:last-of-type {
-    margin-bottom: 0;
-    border-bottom: none;
+  &:last-of-type::after {
+    display: none; /* 마지막 요소는 줄 제거 */
   }
 `;

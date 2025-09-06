@@ -5,7 +5,6 @@ import { Heading3 } from '@/components/Text.tsx';
 import Wrapper from '@/components/Wrapper.tsx';
 import WrapperPull from '@/components/WrapperPull.tsx';
 import Account from '@/layout/Account/Account.tsx';
-import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryHeart from '@/layout/GalleryHeart/GalleryWrap.tsx';
 import GallerySlide from '@/layout/GallerySlide/GallerySlide.tsx';
 import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
@@ -81,17 +80,24 @@ const FullWidthSection = styled.div<{ bg?: string }>`
           </Wrapper>
         </AnimatedComponent>
         <AnimatedComponent>
-          <WrapperPull>
+          <WrapperPull
+            style={{
+                backgroundColor: '#f3e6c9'
+                // backgroundColor: '#B5C7D3'
+                // backgroundColor: '#cee7ef'
+            }}>
             <Heading1           
               style={{
-                marginBottom: '10%'
+                marginBottom: '10%',
+                color:'white'
               }}>Our Growth Story</Heading1>
             <Diary>
               <GalleryHeart />
             </Diary>
             <Heading3           
               style={{
-                marginBottom: '10%'
+                marginBottom: '10%',
+                color:'white'
               }}>Slide me</Heading3>
           </WrapperPull>
         </AnimatedComponent>
@@ -130,7 +136,13 @@ const FullWidthSection = styled.div<{ bg?: string }>`
           <Guestbook />
         </Wrapper>
         </AnimatedComponent>
-        <FloatingBar isVisible={isVisible} />
+        <AnimatedComponent>
+          <Wrapper>
+            <Heading1>Message</Heading1>
+            <Guestbook />
+          </Wrapper>
+        </AnimatedComponent>
+        {/* <FloatingBar isVisible={isVisible} /> */}
     </AppContainer>
   );
 }
