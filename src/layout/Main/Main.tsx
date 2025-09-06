@@ -45,6 +45,7 @@ const SubTitle = styled.p`
   font-weight: 400;
   font-style: normal;
   font-size: 2.1rem;
+  text-align: center;
   color: #2F2120;
   line-height: 140%;
   white-space: pre-line;

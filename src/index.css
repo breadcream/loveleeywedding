@@ -1,35 +1,31 @@
-body {
-  font-family: SUITE-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.87);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --CARD-W: 360px;
-  --CARD-H: 740px;
-  text-align: center;
-  margin: 0 auto;
-  min-width: 280px;
-  display: flex;
-  justify-content: center;
-  background-color: #ffffff;
-}
-
-html {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow-x: hidden;
-}
-
-html::-webkit-scrollbar {
-  display: none; /* Chrome , Safari , Opera */
-}
-
-html,
-body {
+/* Reset 및 기본 body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
-  overscroll-behavior-x: none;
+  overflow-x: hidden; /* 가로 스크롤 제거 */
+  font-family: SUITE-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* 중앙 콘텐츠 */
+.container {
+  width: 100%;        /* 화면이 작으면 꽉 차게 */
+  max-width: 460px;   /* 화면 크면 최대 460px */
+  margin: 0 auto;     /* 가로 중앙 정렬 */
+  position: relative;
+  background-color: #ffffff; /* 카드 느낌 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 원하면 그림자 */
+}
+
+/* Full-width 배경 섹션 */
+.full-width-bg {
+  width: 100vw;                            /* 화면 전체 폭 */
+  margin-left: calc(-50vw + 50%);          /* 부모 container 중앙 정렬 유지 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @font-face {
@@ -54,14 +50,7 @@ body {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: transparent; /* 사진 사이 간격은 남지만 색은 사라짐 */
 }
 
 .swiper-slide img {
@@ -69,11 +58,5 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.container {
-  width: 360px;           /* 본문 폭 고정 */
-  min-height: 100vh;       /* 화면 세로 전체 높이 확보 */
-  background-color: #ffffff; /* 카드 느낌 */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 원하면 그림자 */
+  margin-bottom: 30%;
 }

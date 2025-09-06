@@ -11,11 +11,11 @@ const Sub = () => {
 export default Sub;
 
 const SubImg = styled.img`
-  width: 80%;
+  width: 60%;
   height: auto;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 `;

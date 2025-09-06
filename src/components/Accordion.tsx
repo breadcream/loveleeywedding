@@ -32,6 +32,8 @@ export default Accordion;
 
 const AccordionWrapper = styled.div`
   font-family: "Noto Sans KR", sans-serif;
+  width: 75%;          /* 부모 기준 70% */
+  margin: 0 auto;      /* 중앙 정렬 */
   border: 1px solid #f2f2f2;
   margin-bottom: 20px;
   border-radius: 10px;

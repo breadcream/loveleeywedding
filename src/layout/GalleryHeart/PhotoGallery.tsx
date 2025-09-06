@@ -13,10 +13,11 @@ import { Navigation } from 'swiper/modules';
 export default function PhotoGallery() {
     const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer',
-    objectFit: 'cover', // 전체 이미지가 보이도록 맞추고 싶을 때는 contain / 비율 유지하고 싶을 때는 cover
-    width: '100%',
-    height: '100%'
-  };
+    objectFit: 'contain', // 전체 이미지가 보이도록 맞추고 싶을 때는 contain / 비율 유지하고 싶을 때는 cover
+    width: '60%',
+    height: '60%',
+    margin: '10%',
+    };
   return (
     <>
       <Swiper
@@ -25,10 +26,10 @@ export default function PhotoGallery() {
         className="mySwiper"
         slidesPerView={2}
         slidesPerGroup={2}
-        spaceBetween={45}
+        spaceBetween={-10}
         loop={true}
         style={{
-          marginTop: '-70%'
+          overflow: 'hidden'
         }}>
         {images.map((src, index) => (
         <SwiperSlide key={index}>

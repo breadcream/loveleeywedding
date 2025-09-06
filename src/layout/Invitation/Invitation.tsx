@@ -19,9 +19,9 @@ export default Invitation;
 const InvitationWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
-  width: 100%;
+  width: 80%;
+  text-align: center;
   background-color: rgb(242, 242, 242);
   border-radius: 15px;
   --MARGIN: calc(var(--CARD-W) * 0.07);
