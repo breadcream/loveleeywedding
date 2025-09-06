@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { motion } from 'framer-motion';
 
 const Wrapper = styled.section`
   display: flex;
