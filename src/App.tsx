@@ -16,6 +16,7 @@ import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
 import Sub from '@/layout/Sub/Sub.tsx';
 import Diary from '@/layout/Diary/Diary.tsx';
+import Notice from '@/layout/Notice/Notice.tsx';
 import styled from '@emotion/styled';
 import AnimatedComponent from './components/AnimatedComponent.tsx';
 function App() {
@@ -139,8 +140,8 @@ const FullWidthSection = styled.div<{ bg?: string }>`
         </AnimatedComponent>
         <AnimatedComponent>
           <Wrapper>
-            <Heading1>Message</Heading1>
-            <Guestbook />
+            <Heading1>Notice</Heading1>
+            <Notice />
           </Wrapper>
         </AnimatedComponent>
         <FloatingBar isVisible={isVisible} />
