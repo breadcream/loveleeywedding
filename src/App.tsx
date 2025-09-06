@@ -5,6 +5,7 @@ import { Heading3 } from '@/components/Text.tsx';
 import Wrapper from '@/components/Wrapper.tsx';
 import WrapperPull from '@/components/WrapperPull.tsx';
 import Account from '@/layout/Account/Account.tsx';
+import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryHeart from '@/layout/GalleryHeart/GalleryWrap.tsx';
 import GallerySlide from '@/layout/GallerySlide/GallerySlide.tsx';
 import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
@@ -142,7 +143,7 @@ const FullWidthSection = styled.div<{ bg?: string }>`
             <Guestbook />
           </Wrapper>
         </AnimatedComponent>
-        {/* <FloatingBar isVisible={isVisible} /> */}
+        <FloatingBar isVisible={isVisible} />
     </AppContainer>
   );
 }
