@@ -6,8 +6,8 @@ import Wrapper from '@/components/Wrapper.tsx';
 import WrapperPull from '@/components/WrapperPull.tsx';
 import Account from '@/layout/Account/Account.tsx';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
-import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
 import GalleryHeart from '@/layout/GalleryHeart/GalleryWrap.tsx';
+import GallerySlide from '@/layout/GallerySlide/GallerySlide.tsx';
 import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import KakaoMap from '@/layout/Location/KakaoMap.tsx';
@@ -50,12 +50,18 @@ function App() {
 `;
 
 const FullWidthSection = styled.div<{ bg?: string }>`
-  width: 100vw;                             /* 화면 전체 폭 */
-  margin-left: calc(-50vw + 50%);           /* 중앙 정렬 유지 */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   background: ${({ bg }) => (bg ? `url(${bg}) center/cover no-repeat` : 'transparent')};
   position: relative;
   overflow: visible;
   padding: 20px 0;
+
+  /* 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
   return (
@@ -91,10 +97,15 @@ const FullWidthSection = styled.div<{ bg?: string }>`
         </AnimatedComponent>
         <AnimatedComponent>
           <Wrapper ref={galleryRef}>
+            <GallerySlide />
+          </Wrapper>
+        </AnimatedComponent>
+        {/* <AnimatedComponent>
+          <Wrapper ref={galleryRef}>
             <Heading1>Gallery</Heading1>
             <GalleryWrap />
           </Wrapper>
-        </AnimatedComponent>
+        </AnimatedComponent> */}
         <AnimatedComponent>
           <Wrapper>
             <Heading2>마음 전하실 곳</Heading2>
@@ -110,7 +121,7 @@ const FullWidthSection = styled.div<{ bg?: string }>`
         </AnimatedComponent>
         <AnimatedComponent>
           <Wrapper>
-            <Location />
+            <Location/>
           </Wrapper>
         </AnimatedComponent>
         <AnimatedComponent>

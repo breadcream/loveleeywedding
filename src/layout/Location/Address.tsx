@@ -11,7 +11,7 @@ const Address = () => {
         const { title, desc } = item;
         return (
           <Way key={title}>
-            <PointTitle>{title}</PointTitle>
+            <PointTitle><strong>{title}</strong></PointTitle>
             <Caption textAlign={'left'}>{desc}</Caption>
           </Way>
         );
@@ -25,7 +25,6 @@ export default Address;
 const WayWrapper = styled.div`
   text-align: center;
 `;
-
 const Way = styled.div`
   text-align: center;
   position: relative;  

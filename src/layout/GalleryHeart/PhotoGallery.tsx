@@ -23,7 +23,7 @@ export default function PhotoGallery() {
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        className="photoSwiper"
         slidesPerView={2}
         slidesPerGroup={2}
         spaceBetween={-10}
@@ -32,7 +32,7 @@ export default function PhotoGallery() {
           overflow: 'hidden'
         }}>
         {images.map((src, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} className="photoSwiperSlide">
           <img src={src} alt={`slide-${index}`} style={smallItemStyles}/>
         </SwiperSlide>
       ))}
