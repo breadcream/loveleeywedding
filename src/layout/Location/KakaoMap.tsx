@@ -19,6 +19,8 @@ const KakaoMap = () => {
       center={{ lat, lng: lon }} 
       style={{ width: '80%', height: '300px', border: '1px solid #f2f2f2', borderRadius: '10px' }}
       level={3}
+      draggable={false}   // 드래그 막기
+      zoomable={false}    // 줌 막기
     >
       <MapMarker position={{ lat, lng: lon }} />
     </Map>

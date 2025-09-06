@@ -12,7 +12,7 @@ const Address = () => {
         return (
           <Way key={title}>
             <PointTitle>{title}</PointTitle>
-            <Caption textAlign={'center'}>{desc}</Caption>
+            <Caption textAlign={'left'}>{desc}</Caption>
           </Way>
         );
       })}
@@ -28,4 +28,17 @@ const WayWrapper = styled.div`
 
 const Way = styled.div`
   text-align: center;
+  position: relative;  
+  margin-bottom: 10%;
+  &::after {
+    content: '';
+    display: block;
+    width: 60%;             /* 👈 원하는 길이 */
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0 auto;         /* 가운데 정렬 */
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
 `;

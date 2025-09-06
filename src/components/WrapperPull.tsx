@@ -5,7 +5,7 @@ const WrapperPull = styled.section`
   flex-direction: column;
   justify-content: center; /* 세로 가운데 */
   align-items: center;     /* 가로 가운데 */
-  min-height: 900px;       /* 최소 높이 */
+  min-height: 800px;       /* 최소 높이 */
   width: 100%;
   max-width: 460px;
   margin: 0 auto;

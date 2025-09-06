@@ -15,6 +15,13 @@ export const Heading2 = styled.p`
   white-space: pre-line;
 `;
 
+export const Heading3 = styled.p`
+  font-size: 1rem;
+  margin: 10px;
+  color: #c8c9c7;
+  white-space: pre-line;
+`;
+
 export const PointTitle = styled.p`
   font-style: normal;
   line-height: 1;
