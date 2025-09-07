@@ -31,6 +31,8 @@ const CommentForm = () => {
 
   useEffect(() => {
     if (isOpen) {
+      setName("");
+      setMessage("");
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -209,6 +211,7 @@ const EntriesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 340px;
 `;
 
 const Entry = styled.div`
@@ -254,7 +257,7 @@ const EntryDate = styled.span`
 `;
 
 const WriteButton = styled.button`
-  width: 100%; 
+  width: 340px; 
   padding: 8px; 
   height: 48px; 
   border-radius: 8px; 
