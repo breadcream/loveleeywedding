@@ -17,6 +17,7 @@ import Main from '@/layout/Main/Main.tsx';
 import Sub from '@/layout/Sub/Sub.tsx';
 import Diary from '@/layout/Diary/Diary.tsx';
 import Notice from '@/layout/Notice/Notice.tsx';
+import LastButtons from '@/layout/LastButtons/LastButtons.tsx';
 import styled from '@emotion/styled';
 import AnimatedComponent from './components/AnimatedComponent.tsx';
 function App() {
@@ -144,6 +145,7 @@ const FullWidthSection = styled.div<{ bg?: string }>`
             <Notice />
           </Wrapper>
         </AnimatedComponent>
+        <LastButtons/>
         <FloatingBar isVisible={isVisible} />
     </AppContainer>
   );
