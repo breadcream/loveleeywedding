@@ -35,7 +35,7 @@ const CommentForm = () => {
     } else {
       document.body.style.overflow = "";
     }
-    
+
     const q = query(collectionRef, orderBy("createdAt", "desc"));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const data: GuestbookEntry[] = snapshot.docs.map(docSnap => ({
@@ -259,7 +259,6 @@ const WriteButton = styled.button`
   border: none; 
   font-size: 0.9rem; 
   background-color: rgb(242, 242, 242); 
-  cursor: pointer; 
   font-color: black;
   font-family: SUITE-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
   margin-bottom: 5%;
