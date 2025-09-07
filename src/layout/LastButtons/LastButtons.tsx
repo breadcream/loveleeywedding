@@ -1,11 +1,6 @@
 import { useEffect } from 'react';
 import styled from '@emotion/styled';
-import data from 'data.json';
 import RoundButton from '@/components/RoundButton.tsx';
-
-interface Window {
-  Kakao: any;
-}
 
 const LastButtons = () => {
   useEffect(() => {
@@ -14,7 +9,17 @@ const LastButtons = () => {
     }
   }, []);
 
-  const { naverMap } = data.mapInfo;
+  const handleCopy = () => {
+    navigator.clipboard.writeText(window.location.href).then(
+      () => {
+        alert('주소가 복사되었습니다.😉😉');
+      },
+      () => {
+        alert('주소 복사에 실패했습니다.🥲🥲');
+      },
+    );
+  };
+
   const shareKaKao = () => {
     window.Kakao.Share.sendCustom({
       templateId: 124095
@@ -22,7 +27,7 @@ const LastButtons = () => {
   };
   return (
     <MapButtonWrapper>
-      <RoundButton onClick={() => window.open(naverMap)}>링크 공유하기</RoundButton>
+      <RoundButton onClick={handleCopy}>링크 공유하기</RoundButton>
       <RoundButton onClick={() => shareKaKao()}>카카오톡 공유하기</RoundButton>
     </MapButtonWrapper>
   );
