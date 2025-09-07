@@ -5,7 +5,7 @@ import RoundButton from '@/components/RoundButton.tsx';
 const LastButtons = () => {
   useEffect(() => {
     if (window.Kakao && !window.Kakao.isInitialized()) {
-      window.Kakao.init(import.meta.env.VITE_APP_KAKAO_KEY);
+      window.Kakao.init('6fb9ec737fa5bf38d3540fbaf572a9d8');
     }
   }, []);
 
