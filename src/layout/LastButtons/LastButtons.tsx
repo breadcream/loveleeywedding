@@ -4,6 +4,7 @@ import RoundButton from '@/components/RoundButton.tsx';
 import { useToast } from '@/components/Toast.tsx';
 
 const LastButtons = () => {
+  const toast = useToast(); // ✅ 컴포넌트 안에서 훅 호출
   useEffect(() => {
     if (window.Kakao && !window.Kakao.isInitialized()) {
       window.Kakao.init('6fb9ec737fa5bf38d3540fbaf572a9d8');
@@ -11,7 +12,6 @@ const LastButtons = () => {
   }, []);
 
   const handleCopy = () => {
-    const toast = useToast(); // ✅ 컴포넌트 안에서 훅 호출
     navigator.clipboard.writeText(window.location.href).then(
       () => {
         toast('주소가 복사되었습니다');
@@ -29,7 +29,7 @@ const LastButtons = () => {
   };
   return (
     <MapButtonWrapper>
-      <RoundButton onClick={handleCopy}>링크 공유하기</RoundButton>
+      <RoundButton onClick={() => handleCopy()}>링크 공유하기</RoundButton>
       <RoundButton onClick={() => shareKaKao()}>카카오톡 공유하기</RoundButton>
     </MapButtonWrapper>
   );

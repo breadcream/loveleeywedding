@@ -21,8 +21,6 @@ html, body {
 
 /* Full-width 배경 섹션 */
 .full-width-bg {
-  width: 100vw;                            /* 화면 전체 폭 */
-  margin-left: calc(-50vw + 50%);          /* 부모 container 중앙 정렬 유지 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

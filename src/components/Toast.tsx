@@ -22,7 +22,7 @@ interface ToastItem {
 export const Toast: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [toasts, setToasts] = useState<ToastItem[]>([]);
 
-  const toast = (message: string, duration = 1500) => {
+  const toast = (message: string, duration = 1000) => {
     const id = Date.now();
     setToasts(prev => [...prev, { id, message }]);
     setTimeout(() => {

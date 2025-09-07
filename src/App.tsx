@@ -52,8 +52,8 @@ function App() {
 `;
 
 const FullWidthSection = styled.div<{ bg?: string }>`
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  // width: 100vw;
+  // margin-left: calc(-50vw + 50%);
   background: ${({ bg }) => (bg ? `url(${bg}) center/cover no-repeat` : 'transparent')};
   position: relative;
   overflow: visible;
