@@ -275,6 +275,7 @@ const SubmitButton = styled.button`
   font-size: 0.9rem; 
   background-color: rgb(242, 242, 242); 
   cursor: pointer; 
+  color: #555;
   font-family: SUITE-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
 `;
 
