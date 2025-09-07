@@ -177,11 +177,12 @@ const FormWrapper = styled.form`
 
 const NameInput = styled.input`
   width: 90%; // 중앙 정렬 감안해서 적당한 폭
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
   outline: none;
   font-family: inherit;
+  font-size: 13px;
 
   &::placeholder {
     text-align: center; // placeholder 중앙 정렬
@@ -191,12 +192,13 @@ const NameInput = styled.input`
 const MessageInput = styled.textarea`
   width: 90%;
   height: 100px;
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
   outline: none;
   resize: none;
   font-family: inherit;
+  font-size: 13px;
 
   &::placeholder {
     text-align: center; // placeholder 중앙 정렬
