@@ -211,7 +211,6 @@ const EntriesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 340px;
 `;
 
 const Entry = styled.div`
@@ -220,6 +219,9 @@ const Entry = styled.div`
   padding: 8px; 
   background-color: #fafafa;
   position: relative;
+  width: 80%;
+  margin: 0 auto;        /* ✅ 좌우 가운데 정렬 */
+  align-items: center;   /* ✅ 내부 아이템도 가운데 */
 `;
 
 const EntryHeader = styled.div`
@@ -258,7 +260,7 @@ const EntryDate = styled.span`
 `;
 
 const WriteButton = styled.button`
-  width: 340px; 
+  width: 85%;
   padding: 8px; 
   height: 48px; 
   border-radius: 8px; 
