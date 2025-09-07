@@ -6,9 +6,7 @@ const Guestbook = () => {
   return (
     <GuestBookWrapper>
       <Heading2>
-        메시지를 남겨주세요.
-        <br />
-        결혼식 하루 뒤, 신랑 신부에게 전달됩니다.
+        따뜻한 방명록을 남겨주시면 감사드리겠습니다
       </Heading2>
       <CommentForm />
     </GuestBookWrapper>

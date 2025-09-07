@@ -72,9 +72,9 @@ const ToastBox = styled.div`
   color: black;
   padding: 12px 20px;
   border-radius: 10px;
-  min-width: 230px;
-  max-width: 230px;
-  min-height: 170px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 140px;
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 0.3s forwards, fadeOut 0.3s forwards 2.7s;

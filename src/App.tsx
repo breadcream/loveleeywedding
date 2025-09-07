@@ -20,6 +20,7 @@ import Notice from '@/layout/Notice/Notice.tsx';
 import LastButtons from '@/layout/LastButtons/LastButtons.tsx';
 import styled from '@emotion/styled';
 import AnimatedComponent from './components/AnimatedComponent.tsx';
+
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef(null);

@@ -1,11 +1,20 @@
-import { initializeApp } from 'firebase/app';
-import { getDatabase } from 'firebase/database';
+// src/firebase.ts
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
-// TODO: https://firebase.google.com/docs/web/setup?hl=ko
-// 가이드에 따라 firebase config를 설정합니다.
+// Firebase config
 const firebaseConfig = {
-
+  apiKey: "AIzaSyA63tta665Cr3U7U7G4svzmogL7VxL5n-o",
+  authDomain: "loveleey-8937d.firebaseapp.com",
+  projectId: "loveleey-8937d",
+  storageBucket: "loveleey-8937d.firebasestorage.app",
+  messagingSenderId: "994956647193",
+  appId: "1:994956647193:web:40fc86da1bd4745ad00388",
+  measurementId: "G-DEXZNZJ36N",
 };
 
-export const firebaseApp = initializeApp(firebaseConfig);
-export const realtimeDb = getDatabase(firebaseApp);
+// Firebase 앱 초기화
+const app = initializeApp(firebaseConfig);
+
+// Firestore 초기화
+export const db = getFirestore(app);
