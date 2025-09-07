@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import styled from '@emotion/styled';
 import RoundButton from '@/components/RoundButton.tsx';
+import { useToast } from '@/components/Toast.tsx';
 
 const LastButtons = () => {
   useEffect(() => {
@@ -10,12 +11,13 @@ const LastButtons = () => {
   }, []);
 
   const handleCopy = () => {
+    const toast = useToast(); // ✅ 컴포넌트 안에서 훅 호출
     navigator.clipboard.writeText(window.location.href).then(
       () => {
-        alert('주소가 복사되었습니다.😉😉');
+        toast('주소가 복사되었습니다');
       },
       () => {
-        alert('주소 복사에 실패했습니다.🥲🥲');
+        toast('주소 복사에 실패했습니다');
       },
     );
   };

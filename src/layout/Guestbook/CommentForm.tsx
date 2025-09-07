@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
+import { useToast } from '@/components/Toast.tsx';
 // import { push, ref, serverTimestamp } from 'firebase/database';
 // import { realtimeDb } from '../../firebase.ts';
 
@@ -9,10 +10,11 @@ import styled from '@emotion/styled';
 const CommentForm = () => {
   const [name, setName] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+  const toast = useToast(); // ✅ 컴포넌트 안에서 훅 호출
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     if (!name || !message) {
-      alert('이름과 메시지를 채워주세요. 🥹');
+      toast('이름과 메시지를 채워주세요');
     } else {
       e.preventDefault();
       // TODO: 이름, 메시지, 생성시간, 작성날짜 저장.
@@ -24,7 +26,7 @@ const CommentForm = () => {
       // };
       // void push(guestbookRef, guestbookMessage);
       //
-      // alert('메시지를 보냈습니다. 💌');
+      // toast('메시지를 보냈습니다. 💌');
       setName('');
       setMessage('');
     }

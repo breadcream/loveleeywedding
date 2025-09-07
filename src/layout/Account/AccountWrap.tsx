@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import Copy from '@/assets/icons/copy.svg?react';
 import kakaopay from '@/assets/icons/kakaopay.png?url';
 import toss from '@/assets/icons/toss.png?url';
+import { useToast } from '@/components/Toast.tsx';
 
 interface IAccountProps {
   name: string;
@@ -11,6 +12,7 @@ interface IAccountProps {
   kakaopayAccount?: string;
   tossAccount?: string;
 }
+
 const AccountWrap = ({
   name,
   relation,
@@ -19,13 +21,14 @@ const AccountWrap = ({
   kakaopayAccount,
   tossAccount,
 }: IAccountProps) => {
+  const toast = useToast(); // ✅ 컴포넌트 안에서 훅 호출
   const handleCopy = () => {
     navigator.clipboard.writeText(account).then(
       () => {
-        alert('계좌번호가 복사되었습니다.😉😉');
+        toast("계좌번호가 복사되었습니다")
       },
       () => {
-        alert('계좌번호 복사에 실패했습니다.🥲🥲');
+        toast('계좌번호 복사에 실패했습니다');
       },
     );
   };
