@@ -22,28 +22,7 @@ import styled from '@emotion/styled';
 import AnimatedComponent from './components/AnimatedComponent.tsx';
 
 function App() {
-  const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef(null);
-
-  useEffect(() => {
-    window.addEventListener('scroll', checkScrollPosition);
-    return () => {
-      window.removeEventListener('scroll', checkScrollPosition);
-    };
-  }, []);
-
-  const checkScrollPosition = () => {
-    if (galleryRef.current) {
-      const { offsetTop } = galleryRef.current;
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition >= offsetTop) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    }
-  };
 
   const AppContainer = styled.div`
   width: 100%;
@@ -147,7 +126,6 @@ const FullWidthSection = styled.div<{ bg?: string }>`
           </Wrapper>
         </AnimatedComponent>
         <LastButtons/>
-        <FloatingBar isVisible={isVisible} />
     </AppContainer>
   );
 }

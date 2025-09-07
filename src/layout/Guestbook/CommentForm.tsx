@@ -30,6 +30,12 @@ const CommentForm = () => {
   const collectionRef = collection(db, "loveleey_guestbook");
 
   useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    
     const q = query(collectionRef, orderBy("createdAt", "desc"));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const data: GuestbookEntry[] = snapshot.docs.map(docSnap => ({
@@ -40,7 +46,7 @@ const CommentForm = () => {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [isOpen]);
 
   const addGuestbook = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -129,7 +135,8 @@ const Container = styled.div`
 const Overlay = styled.div`
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100dvh;   // ← 기존 100% 대신
   background-color: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
