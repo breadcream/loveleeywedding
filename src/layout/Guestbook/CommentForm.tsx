@@ -241,6 +241,7 @@ const DeleteButton = styled.button`
 `;
 
 const EntryMessage = styled.div`
+  text-align: left;
   font-size: 1rem; 
   color: #333; 
   margin-bottom: 6px;
