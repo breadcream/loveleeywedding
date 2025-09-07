@@ -159,14 +159,14 @@ const FormWrapper = styled.form`
   align-items: center; // 좌우 중앙
 `;
 
-const CloseButton = styled.button`
-  position: absolute;
-  top: 8px; right: 12px;
-  border: none;
-  background: none;
-  font-size: 24px;
-  cursor: pointer;
-`;
+// const CloseButton = styled.button`
+//   position: absolute;
+//   top: 8px; right: 12px;
+//   border: none;
+//   background: none;
+//   font-size: 24px;
+//   cursor: pointer;
+// `;
 
 const NameInput = styled.input`
   width: 90%; // 중앙 정렬 감안해서 적당한 폭
