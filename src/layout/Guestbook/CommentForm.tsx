@@ -219,7 +219,8 @@ const Entry = styled.div`
   padding: 8px; 
   background-color: #fafafa;
   position: relative;
-  width: 80%;
+  min-width: 290px;
+  max-width: 320px;
   margin: 0 auto;        /* ✅ 좌우 가운데 정렬 */
   align-items: center;   /* ✅ 내부 아이템도 가운데 */
 `;
@@ -260,7 +261,8 @@ const EntryDate = styled.span`
 `;
 
 const WriteButton = styled.button`
-  width: 85%;
+  min-width: 310px;
+  max-width: 330px;
   padding: 8px; 
   height: 48px; 
   border-radius: 8px; 
