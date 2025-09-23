@@ -40,3 +40,11 @@ export const Caption = styled.p<{ textAlign?: string }>`
   white-space: pre-line;
   margin: 30px;
 `;
+
+export const AddressCaption = styled.p<{ textAlign?: string }>`
+  font-size: 14px;
+  text-align: ${(props) => (props.textAlign ? props.textAlign : 'start')};
+  white-space: pre-line;
+  margin: 30px;
+  margin-bottom: 50px;
+`;

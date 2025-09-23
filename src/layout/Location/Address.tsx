@@ -1,18 +1,20 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import { Caption, PointTitle } from '@/components/Text.tsx';
+import { AddressCaption, PointTitle } from '@/components/Text.tsx';
 import { ILocationInfo } from '@/types/data.ts';
 
 const Address = () => {
   const { locationInfo } = data;
   return (
     <WayWrapper>
+      <PointTitle><strong>{data.locationTitle}</strong></PointTitle>
+      <AddressCaption>{data.locationTitle2}</AddressCaption>
       {locationInfo?.map((item: ILocationInfo) => {
         const { title, desc } = item;
         return (
           <Way key={title}>
-            <PointTitle><strong>{title}</strong></PointTitle>
-            <Caption textAlign={'left'}>{desc}</Caption>
+            <AddressCaption><strong>{title}</strong></AddressCaption>
+            <AddressCaption textAlign={'left'} >{desc}</AddressCaption>
           </Way>
         );
       })}
@@ -26,13 +28,12 @@ const WayWrapper = styled.div`
   text-align: center;
 `;
 const Way = styled.div`
-  text-align: center;
+  text-align: left;
   position: relative;  
   margin-bottom: 10%;
   &::after {
     content: '';
     display: block;
-    width: 60%;             /* 👈 원하는 길이 */
     border-bottom: 1px solid #dfdfdf;
     margin: 0 auto;         /* 가운데 정렬 */
   }
