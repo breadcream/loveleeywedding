@@ -18,6 +18,7 @@ const LocationWrapper = styled.div`
   align-items: center;
   background-color: rgb(242, 242, 242);
   text-align: center;
-  padding-top: 40px;      /* 내부 글씨와 박스 위·아래 간격 확보 */
+  padding-top: 80px;      /* 내부 글씨와 박스 위·아래 간격 확보 */
+  padding-bottom: 30px;      /* 내부 글씨와 박스 위·아래 간격 확보 */
   margin: -30px;
 `;
