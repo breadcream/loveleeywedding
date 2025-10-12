@@ -1,15 +1,21 @@
-import image08 from '@/assets/images/08.jpg';
-import image09 from '@/assets/images/09.jpg';
-import image10 from '@/assets/images/10.jpg';
-import image11 from '@/assets/images/11.jpg';
-import image12 from '@/assets/images/12.jpg';
+import image1 from '@/assets/images/kid_01.png';
+import image2 from '@/assets/images/kid_02.png';
+import image3 from '@/assets/images/kid_03.png';
+import image4 from '@/assets/images/kid_04.png';
+import image5 from '@/assets/images/kid_05.png';
+import image6 from '@/assets/images/kid_06.png';
+import image7 from '@/assets/images/kid_07.png';
+import image8 from '@/assets/images/kid_08.png';
 
 export const images = [
-  image08,
-  image09,
-  image10,
-  image11,
-  image12,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
 ];
 
 export default images;
