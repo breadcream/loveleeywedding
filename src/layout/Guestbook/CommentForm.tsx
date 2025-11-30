@@ -211,6 +211,23 @@ const EntriesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  max-height: 300px; 
+  overflow-y: auto;
+  padding-right: 4px; 
+
+  /* --- 스크롤바 숨기기 --- */
+
+  /* Chrome, Edge, Safari */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE, Edge (구형) */
+  -ms-overflow-style: none;
 `;
 
 const Entry = styled.div`
