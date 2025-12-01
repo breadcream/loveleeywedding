@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-import images from './Images.ts';
+import images from './Images';
 import './SlideStyles.css';
 
 export default function PhotoGallery() {
@@ -17,11 +17,9 @@ export default function PhotoGallery() {
     <>
       {/* 메인 Swiper */}
       <Swiper
-        style={{
-          '--swiper-navigation-color': '#fff',
-        } as React.CSSProperties}
+        style={{ '--swiper-navigation-color': '#fff' } as React.CSSProperties}
         spaceBetween={10}
-        navigation={true}
+        navigation
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mainSwiper"
@@ -33,20 +31,19 @@ export default function PhotoGallery() {
         ))}
       </Swiper>
 
-      {/* 썸네일 Swiper */}
+      {/* 썸네일 Swiper (loop 제거 추천) */}
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
+        freeMode
+        watchSlidesProgress
         modules={[FreeMode, Navigation, Thumbs]}
-        loop={true}
         className="thumbSwiper"
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <img src={src} alt={`thumb-${index}`}/>
+            <img src={src} alt={`thumb-${index}`} />
           </SwiperSlide>
         ))}
       </Swiper>
