@@ -81,7 +81,8 @@
         {
           "name": "김춘혜",
           "relation": "어머니",
-          "bank": "_"
+          "bank": "_",
+          "account": ""
         }
       ]
     }
