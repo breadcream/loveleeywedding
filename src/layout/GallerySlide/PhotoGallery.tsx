@@ -20,6 +20,7 @@ export default function PhotoGallery() {
         style={{ '--swiper-navigation-color': '#fff' } as React.CSSProperties}
         spaceBetween={10}
         navigation
+        loop={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mainSwiper"
