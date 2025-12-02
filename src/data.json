@@ -43,7 +43,9 @@
           "name": "이재준",
           "relation": "신랑",
           "bank": "하나",
-          "account": "766-810092-80707"
+          "account": "766-810092-80707",
+          "kakaopayAccount": "",
+          "tossAccount": ""
         },
         {
           "name": "이찬범",
@@ -66,7 +68,9 @@
           "name": "박은영",
           "relation": "신부",
           "bank": "국민",
-          "account": "383601-04-102675"
+          "account": "383601-04-102675",
+          "kakaopayAccount": "",
+          "tossAccount": ""
         },
         {
           "name": "박영길",
