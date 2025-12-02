@@ -56,7 +56,7 @@ const FullWidthSection = styled.div<{ bg?: string }>`
         </AnimatedComponent>
         <AnimatedComponent>
           <Wrapper>
-            <Heading1>Invitation</Heading1>
+            {/* <Heading1>Invitation</Heading1> */}
             <Invitation />
             <Sub />
           </Wrapper>

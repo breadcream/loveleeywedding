@@ -33,7 +33,7 @@
       }
     },
     "eventDetail": "Yeouido The Partyum",
-    "eventDetail2": "2026년 2월 1일 (일) 13:30\n여의도 더파티움 파티움홀"
+    "eventDetail2": "2026. 2. 1. (일) 13:30\n여의도 더파티움 파티움홀"
   },
   "hostInfo": [
     {
@@ -42,22 +42,20 @@
         {
           "name": "이재준",
           "relation": "신랑",
-          "bank": "카카오뱅크",
-          "account": "1234-56-789012",
-          "kakaopayAccount": "",
-          "tossAccount": ""
+          "bank": "하나",
+          "account": "766-810092-80707"
         },
         {
           "name": "이찬범",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "국민",
+          "account": "059-21-0856-804"
         },
         {
           "name": "김옥경",
           "relation": "어머니",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "하나",
+          "account": "766-910010-84407"
         }
       ]
     },
@@ -67,22 +65,19 @@
         {
           "name": "박은영",
           "relation": "신부",
-          "bank": "토스뱅크",
-          "account": "1234-5678-9012",
-          "kakaopayAccount": "",
-          "tossAccount": ""
+          "bank": "국민",
+          "account": "383601-04-102675"
         },
         {
           "name": "박영길",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "국민",
+          "account": "663302-89-110000"
         },
         {
           "name": "김춘혜",
           "relation": "어머니",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "_"
         }
       ]
     }

@@ -24,7 +24,7 @@ const HostInfo = ({ person }: { person: BrideAndGroom }) => {
         <>
           {person.parents.map((parent, index) => (
             <React.Fragment key={index}>
-              {index > 0 && ' · '}
+              {index > 0 && '  '}
               {parent.name}
             </React.Fragment>
           ))}
