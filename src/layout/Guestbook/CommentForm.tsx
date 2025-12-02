@@ -8,8 +8,8 @@ import {
   onSnapshot,
   query,
   orderBy,
-  deleteDoc,
-  doc,
+  // deleteDoc,
+  // doc,
   Timestamp,
 } from "firebase/firestore";
 
@@ -73,13 +73,13 @@ const CommentForm = () => {
     }
   };
 
-  const deleteEntry = async (id: string) => {
-    try {
-      await deleteDoc(doc(db, "loveleey_guestbook", id));
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  // const deleteEntry = async (id: string) => {
+  //   try {
+  //     await deleteDoc(doc(db, "loveleey_guestbook", id));
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   return (
     <Container>
@@ -114,7 +114,7 @@ const CommentForm = () => {
           <Entry key={entry.id}>
             <EntryHeader>
               <strong>{entry.name}</strong>
-              <DeleteButton onClick={() => deleteEntry(entry.id)}>×</DeleteButton>
+              {/* <DeleteButton onClick={() => deleteEntry(entry.id)}>×</DeleteButton> */}
             </EntryHeader>
             <EntryMessage>{entry.message}</EntryMessage>
             <EntryFooter>
@@ -250,14 +250,14 @@ const EntryHeader = styled.div`
   color: #555;
 `;
 
-const DeleteButton = styled.button`
-  border: none;
-  background: none;
-  font-size: 18px;
-  cursor: pointer;
-  color: #999;
-  &:hover { color: red; }
-`;
+// const DeleteButton = styled.button`
+//   border: none;
+//   background: none;
+//   font-size: 18px;
+//   cursor: pointer;
+//   color: #999;
+//   &:hover { color: red; }
+// `;
 
 const EntryMessage = styled.div`
   text-align: left;
